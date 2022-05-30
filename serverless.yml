@@ -1,0 +1,29 @@
+service: sls-podman-ecr-triage
+org: crackers
+
+frameworkVersion: "3"
+configValidationMode: warn
+
+provider:
+  name: aws
+  ecr:
+    images:
+      appimage:
+        path: ./
+  stage: dev
+  region: eu-central-1
+  logRetentionInDays: 1
+  deploymentBucket:
+    name: serverless-dev-eu-frankfurt
+
+functions:
+  tag_plan:
+    image:
+      name: appimage
+      command: 
+        - controller.endpoints.test
+    
+
+package:
+  patterns:
+    - '!node_modules/**'

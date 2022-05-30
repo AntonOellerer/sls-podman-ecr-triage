@@ -1,0 +1,24 @@
+{
+  "name": "sls-podman-ecr-triage",
+  "version": "1.0.0",
+  "description": "A minimum working example for reproducing a podman bug",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntonOellerer/sls-podman-ecr-triage.git"
+  },
+  "author": "Anton Oellerer",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/AntonOellerer/sls-podman-ecr-triage/issues"
+  },
+  "homepage": "https://github.com/AntonOellerer/sls-podman-ecr-triage#readme",
+  "dependencies": {
+    "serverless-python-requirements": "^5.4.0"
+  },
+  "devDependencies": {
+  }
+}
